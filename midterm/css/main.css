@@ -3,13 +3,11 @@ html{
     background: #aad4cf;
     margin: auto;
     width: 55%;
-    padding: 10px;
 }
 
 body{
     background-color: rgba(255, 255, 255, 0.6);
-    padding: 1.5em;
-    width: 80%;
+    width: 100%;
 }
 
 h1{
@@ -39,15 +37,17 @@ nav ul li{
     font-size: 24px;
 }
 
-
 nav ul li:last-child{
     border: none;
 }
 
+main{
+    padding: 1em;
+}
 
 img{
     float: left;
-    height: 250px;
+    height: 200px;
     margin-right: 20px;
     margin-bottom: 20px;
 }
@@ -66,7 +66,6 @@ form{
     line-height: 40px;
 }
 
-
 div input{
     display: block;
     padding-right: 80%;
@@ -80,7 +79,6 @@ div input:last-child{
 section section{
     line-height: 0px;
 }
-
 
 button{
     text-transform: uppercase;

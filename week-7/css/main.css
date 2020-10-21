@@ -3,6 +3,7 @@ body{
     color: darkslategray;
     /* adding background image */
     background-image: url("../images/white_brick_wall.png");
+    padding-top: 82px;
 }
 
 /*
@@ -31,7 +32,15 @@ nav ul{
     list-style: none;
 }
 
+nav ul li{
+    display: inline-block;
+    width: 45%;
+    padding: 1em;
+    box-sizing: border-box;
+}
+
 nav ul a{
+    display: block;
     color: darkslategray;
     text-decoration: none;
 }
@@ -41,13 +50,46 @@ ul{
 }
 /* Selecting HTML element with class name */
 .orange-text{
+    padding: 1.5em;
+    width: 300px;
+    display: block;
     background: darkslategray;
     color: orange;
     text-decoration: none;
 }
 
+/* 2 column using float*/
+article,
+aside{
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 1px solid black;
+    padding: 1.5em;
+    width: 80%;
+    box-sizing: border-box;
+    float: left;
+}
+
+img{
+    width: 100%;
+}
+
+aside{
+    width: 20%;
+}
+
+section{
+    clear: both;
+}
+
+.orange-text.large-text{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
 /* Selecting id value for styling the element */
 #tow{
+    position: relative;
     /* color imsge repeat x-axis y-axis */
     background: orange url("../images/bread.jpg") no-repeat center center;
     background-size: cover; 
@@ -55,8 +97,9 @@ ul{
     color: white;
     /* updating font-size to rem 1.5 x 16 = 24 */
     font-size: 1.5 rem;
+
     /* adding padding to add space between the border and content */
-    padding: 1em;
+    padding: 1em 1em 3em 1em;
     /* 1em = 1 x 24 = 24px */
     /* adding width using viewpoint widh unit */
     width: 50vw;
@@ -96,6 +139,15 @@ selecting element that has attributes of href set to value #tow */
 
 [target="_blank"]{
     text-transform: uppercase;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 999;
 }
 
 /* Using pseudo style

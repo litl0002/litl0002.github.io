@@ -15,8 +15,15 @@ h1{
     background-size: cover;
     text-align: center;
     color: white;
-    font-size: 40px;
-    padding: 100px;
+    font-size: 50px;
+    padding-top: 225px;
+    padding-bottom: 100px;
+    margin-bottom: 5px;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
 }
 
 nav ul a{
@@ -42,7 +49,9 @@ nav ul li:last-child{
 }
 
 main{
-    padding: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
 }
 
 img{
@@ -53,11 +62,16 @@ img{
 }
 
 h2{
-    font-size: 34px;
+    font-size: 30px;
 }
 
 h3{
     font-size: 24px;
+}
+
+.indent{
+    padding: 1em;
+    margin: 0;
 }
 
 form{
@@ -68,7 +82,7 @@ form{
 
 div input{
     display: block;
-    padding-right: 80%;
+    padding-right: 83%;
     padding-bottom: 0%;
 }
 

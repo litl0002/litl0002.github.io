@@ -18,7 +18,12 @@ h1{
     font-size: 50px;
     padding-top: 225px;
     padding-bottom: 100px;
+    /*padding was used to format the text so that it is centered horizontally but not vertically*/
     margin-bottom: 5px;
+}
+
+h1, h2, h3{
+    font-weight: normal;
 }
 
 nav ul{
@@ -46,12 +51,14 @@ nav ul li{
 
 nav ul li:last-child{
     border: none;
+    /*used to remove the border on the last navigation item so that there is only a boder on either side of the middle navigation item*/
 }
 
 main{
     padding-left: 1em;
     padding-right: 1em;
     padding-bottom: 1em;
+    /*no padding on top to remove any space between the body and nav*/
 }
 
 img{
@@ -72,6 +79,7 @@ h3{
 .indent{
     padding-left: 1em;
     margin: 0;
+    /*this was used to make sure that the ul alines with the header, if not used the ul would be indented*/
 }
 
 form{
@@ -83,6 +91,7 @@ form{
 div input{
     display: block;
     padding-right: 83%;
+    /*83% is good for full sized webpage*/
     padding-bottom: 0%;
 }
 

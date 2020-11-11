@@ -185,13 +185,16 @@ p{
 }
 
 /* Simple Actions */
-.action-list{
+.actions-list{
     display: flex;
     flex-flow: row wrap;
 }
 
-.action-list li{
+.actions-list li{
     max-width: 50%;
+    padding: 1em;
+    text-align: center;
+    font-size: 1.5rem;
 }
 
 /* footer */
@@ -230,6 +233,21 @@ p{
     .banner h1{
         color: white;
     }
+    
+    /* Navigation */
+    .nav-list{
+        display: flex;
+    }
+
+    .nav-list li{
+        flex: 1;
+        border: none;
+        border-right: 1px solid grey;
+    }
+
+    .nav-list li:last-child{
+        border: none;
+    }
 
     /* app section */
     .app img{
@@ -240,5 +258,11 @@ p{
 
     .app .btn{
         float: right;
+    }
+}
+
+@media screen and (min-width: 800px){
+    .actions-list li{
+        max-width: 20%;
     }
 }

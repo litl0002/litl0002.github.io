@@ -12,8 +12,8 @@
 
 <body>
     <div>
-        <nav>
-            <ul>
+        <nav class="main-nav">
+            <ul class="nav-list">
                 <li>
                     <img src="images/logo.png" alt="logo">
                     <a href="#">Home</a>
@@ -31,19 +31,25 @@
         
     <header class="heading">
      <!--  Site Header  -->
-        <img src="images/main-banner.jpg" alt="banner">
-        <h1>Welcome to Three Star Media</h1>
-            <p class="heading-text">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus eos esse voluptate quod, minus error consequuntur commodi sunt! Explicabo architecto quam ipsam vero. Id autem harum unde ad dignissimos placeat.
-            </p>
-        <button type="submit">Connect with us <i class="im im-play"></i></button>
+        <div class="heading-img">
+            <img src="images/main-banner.jpg" alt="banner">
+        </div>
+        <div class="heading-text">
+            <h1>Welcome to Three Star Media</h1>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus eos esse voluptate quod, minus error consequuntur commodi sunt! Explicabo architecto quam ipsam vero. Id autem harum unde ad dignissimos placeat.
+                </p>
+            <button type="submit">Connect with us <i class="im im-play"></i></button>
+        </div>
     </header>
     
     <!-- Body -->
     <main class="container">
-        <section>
-            <div>
+        <section class="about">
+            <div class="about-img">
                 <img src="images/about-us.jpg" alt="about us">
+            </div>
+            <div class="about-text">
                 <h2>
                     About Us
                 </h2>
@@ -58,89 +64,105 @@
     <!-- Services --> 
         <section class="services">
             <h2>Our Services</h2>
-                <section class="digital">
+                <section class="service">
                     <div>
                         <img src="images/digital.jpg" alt="digital">
-                        <h3>Digital Transformation</h3>
+                        <div class="text">
+                            <h3>Digital Transformation</h3>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium sapiente minus animi provident, nulla, a doloremque, id debitis iure unde soluta aliquid. Cumque necessitatibus esse laboriosam aspernatur sunt perspiciatis porro.
                         </p>
-                        <button type="submit">Digital Plans <i class="im im-play"></i></button> 
+                            <button type="submit">Digital Plans <i class="im im-play"></i></button> 
+                        </div>
                     </div>
                 </section>
-                <section class="marketing">
+                <section class="service">
                     <div>
                         <img src="images/marketing.jpg" alt="marketing">
-                        <h3>Marketing</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum mollitia totam unde iste doloribus, a ducimus! Repellendus pariatur blanditiis veritatis sequi, nisi voluptatum non aperiam. Similique nam velit optio eaque.
-                        </p>
-                        <button type="submit">Marketing Plans <i class="im im-play"></i></button>
+                        <div class="text">
+                            <h3>Marketing</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum mollitia totam unde iste doloribus, a ducimus! Repellendus pariatur blanditiis veritatis sequi, nisi voluptatum non aperiam. Similique nam velit optio eaque.
+                            </p>
+                            <button type="submit">Marketing Plans <i class="im im-play"></i></button>
+                        </div>  
                     </div>
                 </section>
-                <section class="video">
+                <section class="service">
                     <div>
                         <img src="images/video.jpg" alt="video">
-                        <h3>Video Production</h3>
-                        <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi vel fugit assumenda? Placeat illum hic velit vel, a labore explicabo odit provident id excepturi nihil nesciunt sint quod ullam consequuntur.
-                        </p>
-                        <button type="submit">Video Plans <i class="im im-play"></i></button>
+                        <div class="text">
+                            <h3>Video Production</h3>
+                           <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi vel fugit assumenda? Placeat illum hic velit vel, a labore explicabo odit provident id excepturi nihil nesciunt sint quod ullam consequuntur.
+                            </p>
+                            <button type="submit">Video Plans <i class="im im-play"></i></button>
+                        </div>
                     </div>
                 </section>
-                <section class="web">
+                <section class="service">
                     <div>
                         <img src="images/web.jpg" alt="web">
-                        <h3>Web Development</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, unde modi odio tenetur, cupiditate esse sapiente ex consequuntur accusamus natus debitis. Cum sit quam reprehenderit aliquam minus maxime quia esse?
-                        </p>
-                        <button type="submit">Web Plans <i class="im im-play"></i></button>
+                        <div class="text">
+                            <h3>Web Development</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, unde modi odio tenetur, cupiditate esse sapiente ex consequuntur accusamus natus debitis. Cum sit quam reprehenderit aliquam minus maxime quia esse?
+                            </p>
+                            <button type="submit">Web Plans <i class="im im-play"></i></button>
+                        </div>
                     </div>
                 </section>
-                <section class="print">
+                <section class="service">
                     <div>
                         <img src="images/print.jpg" alt="print">
-                        <h3>Print</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto ab excepturi in libero, autem atque harum magni, quos provident modi adipisci aliquam? Sed delectus, unde placeat iste architecto aut odio!
-                        </p>
-                        <button type="submit">Print Plans <i class="im im-play"></i></button>
+                        <div class="text">
+                            <h3>Print</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto ab excepturi in libero, autem atque harum magni, quos provident modi adipisci aliquam? Sed delectus, unde placeat iste architecto aut odio!
+                            </p>
+                            <button type="submit">Print Plans <i class="im im-play"></i></button>
+                        </div>
                     </div>
                 </section>
         </section>
     <!-- Vision -->
         <section class="vision">
             <img src="images/vision.jpg" alt="vision">
-            <h3>Our Vision</h3>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, culpa, eveniet et dignissimos hic laborum expedita necessitatibus in animi blanditiis neque, repellendus ea perferendis unde dolorum aliquam obcaecati numquam minus.
-            </p>
-            <button type="submit">Learn More <i class="im im-play"></i></button>
+            <div class="vision-text">
+                <h3>Our Vision</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, culpa, eveniet et dignissimos hic laborum expedita necessitatibus in animi blanditiis neque, repellendus ea perferendis unde dolorum aliquam obcaecati numquam minus.
+                </p>
+                <button type="submit">Learn More <i class="im im-play"></i></button>
+            </div>
         </section>
     <!-- Team -->
         <section class="team">
             <h2>Our Team</h2>
-            <section class="john">
+            <section class="person">
                 <div>
                     <img src="images/john.jpg" alt="john">
-                    <h3>John Doe</h3>
-                    <h4>Ceo and Co-owner</h4>
-                    <hr>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus vel libero rerum, quasi tempore atque soluta voluptatibus quaerat officia commodi corrupti cupiditate necessitatibus vero, fugit sed autem ipsa eligendi consequatur.
-                    </p>
+                    <div class="person-text">
+                        <h3>John Doe</h3>
+                        <h4>Ceo and Co-owner</h4>
+                        <hr>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus vel libero rerum, quasi tempore atque soluta voluptatibus quaerat officia commodi corrupti cupiditate necessitatibus vero, fugit sed autem ipsa eligendi consequatur.
+                        </p>
+                    </div>
                 </div>
             </section>
-           <section class="bob">
+           <section class="person">
                 <div>
                     <img src="images/bob.jpg" alt="bob">
-                    <h3>Bob Rite</h3>
-                    <h4>CFO Co-owner</h4>
-                    <hr>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum necessitatibus ut, dolore expedita inventore nihil eveniet obcaecati. Voluptas, cum iusto cupiditate quod nobis perspiciatis expedita maxime laudantium ipsum ullam sunt.
-                    </p>
+                    <div class="person-text">
+                        <h3>Bob Rite</h3>
+                        <h4>CFO Co-owner</h4>
+                        <hr>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum necessitatibus ut, dolore expedita inventore nihil eveniet obcaecati. Voluptas, cum iusto cupiditate quod nobis perspiciatis expedita maxime laudantium ipsum ullam sunt.
+                        </p>
+                    </div>
                 </div>
            </section>
         </section>

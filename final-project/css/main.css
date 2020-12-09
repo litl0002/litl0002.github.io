@@ -85,6 +85,11 @@ h5{
 p{
     margin: 1em 0;
 }
+
+h1, h2, h3, h4{
+	font-weight: bold;
+}
+
 section{
 	margin-bottom: 1em;
 }
@@ -118,10 +123,17 @@ hr{
 	text-decoration: none;
 	
 }
-.nav-list :nth-child(7){
-	background-color: #ffffff;
+form{
+	background-color: #222;
+	text-align: center;
 }
-.nav-list :nth-child(n+8){
+.search-bar{
+	background-color: #ffffff;
+	padding: 15px;
+	width: 75%;
+	margin-bottom: 1em;
+}
+form i{
 	color: #c78c06;
 	background-color: #222;
 	padding: 10px;
@@ -193,7 +205,8 @@ main div img{
 .vision img{
 	position: absolute;
 	display: inline-block;
-	height: 250px;
+	object-fit: cover;
+	max-height: 250px;
 	width: 100%;
 }
 .vision-text{
@@ -267,3 +280,7 @@ main div img{
 }
 
 /* desktop */
+
+@media screen and (min-width: 1200px){
+
+}

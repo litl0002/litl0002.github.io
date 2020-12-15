@@ -100,28 +100,31 @@ hr{
 	border: none;
 }
 
-/* MOBILE */
+button{
+	font-size: 22px;
+}
 
+/* -----------------------------------
+			Mobile Version 
+------------------------------------*/
 
-/* all navigation */
 .main-nav{
 	background-color: #222;
 	padding: 1em;
+	margin-bottom: 0;
 }
-.nav-list li{
+.nav-iteam{
 	display: grid;
 	text-align: center;
+	padding: 1em;
 }
-.nav-list :nth-child(-n+2){
-	background-color: #c78c06;
-	color: #222;
+.main-nav a{
 	text-decoration: none;
-}
-.nav-list :nth-child(n+3){
-	background-color: #222;
 	color: #c78c06;
+}
+.main-nav div:nth-child(-n+2){
+	background-color: #c78c06;
 	text-decoration: none;
-	
 }
 form{
 	background-color: #222;
@@ -130,7 +133,7 @@ form{
 .search-bar{
 	background-color: #ffffff;
 	padding: 15px;
-	width: 75%;
+	width: 85%;
 	margin-bottom: 1em;
 }
 form i{
@@ -151,14 +154,13 @@ header div img{
 	display: inline-block;
 	height: 500px;
 	width: 100%;
-	
 }
 .heading-text{
 	background-color: rgb(0, 0, 0, 0.6);
 	position: absolute;
 	color: #ffffff;
 	padding: 1em;
-	margin-top: 30px;
+	margin-top: 40px;
 }
 .heading button{
 	background-color: #c78c06;
@@ -206,7 +208,7 @@ main div img{
 	position: absolute;
 	display: inline-block;
 	object-fit: cover;
-	max-height: 250px;
+	max-height: 275px;
 	width: 100%;
 }
 .vision-text{
@@ -223,7 +225,7 @@ main div img{
 
 /* all team */
 .team{
-	margin-top: 300px;
+	margin-top: 350px;
 	padding-right: 1em;
 	padding-left: 1em;
 }
@@ -236,6 +238,7 @@ main div img{
 
 /* all contact */
 .contact{
+	margin-top: 100px;
 	padding-right: 1em;
 	padding-left: 1em;
 }
@@ -282,14 +285,52 @@ main div img{
 	color: #c78c06;
 	padding: 1em;
 }
+.btn{
+	color: #c78c06;
+}
 
-/* desktop */
+/* -----------------------------------
+				desktop 
+------------------------------------*/
 
 @media screen and (min-width: 1200px){
 /* navigation */
-	.nav-list li{
-		display: inline;
-		text-decoration: none;
+	.main-nav{
+		padding-right: 0;
+		padding-left: 0;
+		display: grid;
+		grid-template-columns: repeat(10, 1fr);
+		grid-template-rows: repeat(1, 1fr);
+		grid-template-areas: 
+		"ser1 ser2 ser3 ser4 ser5 ser6 ser7 ser8 ser8 ser 9"
+		;
+	}
+	.main-nav div:nth-child(1){
+		grid-area: ser2;
+	}
+	.main-nav div:nth-child(2){
+		grid-area: ser3;
+	}
+	.main-nav div:nth-child(3){
+		grid-area: ser4;
+	}
+	.main-nav div:nth-child(4){
+		grid-area: ser5;
+	}
+	.main-nav div:nth-child(5){
+		grid-area: ser6;
+	}
+	.main-nav div:nth-child(6){
+		grid-area: ser7;
+	}
+	.main-nav div:nth-child(7){
+		grid-area: ser8;
+	}
+	.search-bar{
+		width: 50%;
+	}
+	.main-nav div{
+		margin: auto;
 	}
 
 /* header */
@@ -391,16 +432,13 @@ main div img{
 	.team{
 		max-width: 85%;
 		margin: auto;
-		margin-top: 250px;
-	}
-	.team img{
-		
+		margin-top: 275px;
 	}
 
 	.john{
 		display: grid;
-		grid-template-columns: (1fr, 1fr);
-		grid-template-rows: (1fr);
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(1, 1fr);
 		grid-template-areas: 
 		"ser11 ser22"
 		;
@@ -414,8 +452,8 @@ main div img{
 
 	.bob{
 		display: grid;
-		grid-template-columns: (1fr, 1fr);
-		grid-template-rows: (1fr);
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(1, 1fr);
 		grid-template-areas: 
 		"ser33 ser44"
 		;

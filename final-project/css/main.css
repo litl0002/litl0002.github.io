@@ -385,32 +385,45 @@ main div img{
 	}
 
 /* team */
+	.team section{
+		margin-bottom: 0;
+	}
 	.team{
 		max-width: 85%;
 		margin: auto;
 		margin-top: 250px;
+	}
+	.team img{
+		
+	}
+
+	.john{
 		display: grid;
 		grid-template-columns: (1fr, 1fr);
-		grid-template-rows: (0.25fr, 1fr, 1fr);
+		grid-template-rows: (1fr);
 		grid-template-areas: 
-		"header header"
 		"ser11 ser22"
+		;
+	}
+	.john div:nth-child(1){
+		grid-area: ser11;
+	}
+	.team div:nth-child(2){
+		grid-area: ser22;
+	}
+
+	.bob{
+		display: grid;
+		grid-template-columns: (1fr, 1fr);
+		grid-template-rows: (1fr);
+		grid-template-areas: 
 		"ser33 ser44"
 		;
 	}
-	.team div:nth-child(1){
-		grid-area: header;
-	}
-	.team div:nth-child(2){
-		grid-area: ser11;
-	}
-	.team div:nth-child(3){
-		grid-area: ser22;
-	}
-	.team div:nth-child(4){
+	.bob div:nth-child(1){
 		grid-area: ser44;
 	}
-	.team div:nth-child(5){
+	.bob div:nth-child(2){
 		grid-area: ser33;
 	}
 

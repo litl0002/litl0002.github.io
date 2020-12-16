@@ -101,7 +101,7 @@ hr{
 }
 
 button{
-	font-size: 22px;
+	font-size: 20px;
 }
 
 /* -----------------------------------
@@ -113,18 +113,28 @@ button{
 	padding: 1em;
 	margin-bottom: 0;
 }
+.star-logo{
+	display: grid;
+	background-color: #c78c06;
+	padding: 1em;
+}
+.nav-home{
+	background-color: #c78c06;
+	text-decoration: none;
+	color: #222;
+	padding: 1em;
+	display: grid;
+	text-align: center;
+	padding: 1em;
+	font-size: 20px;
+}
 .nav-iteam{
 	display: grid;
 	text-align: center;
 	padding: 1em;
-}
-.main-nav a{
 	text-decoration: none;
 	color: #c78c06;
-}
-.main-nav div:nth-child(-n+2){
-	background-color: #c78c06;
-	text-decoration: none;
+	font-size: 20px;
 }
 form{
 	background-color: #222;
@@ -135,6 +145,7 @@ form{
 	padding: 15px;
 	width: 85%;
 	margin-bottom: 1em;
+	font-size: 20px;
 }
 form i{
 	color: #c78c06;

@@ -50,47 +50,120 @@ table {
 /* -----------------------------------------------
                 Custom Style
 -------------------------------------------------- */
+/* modular scale www.modularscale.com */
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+body{
+    line-height: 1.5;
+}
+
+h1{
+    font-size: 5.063rem;
+}
+
+h2{
+    font-size: 3.375rem;
+}
+
+h3{
+    font-size: 2.25rem;
+}
+
+h4{
+    font-size: 1.5rem;
+}
+
+h5{
+    font-size: 1rem;
+}
+
+p{
+    margin: 1em 0;
+}
+
+h1, h2, h3, h4{
+	font-weight: bold;
+}
+
+/* -----------------------------------------
+                Mobile
+----------------------------------------- */
+
+body{
+    width: 90%;
+    margin: auto;
+}
 
 .nav{
-    background-color: #262322 !important;
-    border: none !important;
+    background-color: #262322;
+    border: none;
+    padding: 50px;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: space-around;
 }
 nav a{
     color: #ffffff;
 }
 
 .home{
-    background-color: #C2A878 !important;
-    font-family: Arial, Helvetica, sans-serif !important;
+    background-color: #C2A878;
+    font-family: Arial, Helvetica, sans-serif;
     color: #262322;
+    font-size: 2.5rem;
 }
-#home p{
+.home h1{
+    display: flex;
+    justify-content: center;
+}
+.home p{
     background-color: #FCDEBE;
     padding: 1em;
 }
 
 .about{
-    background-color: #9590A8 !important;
-    color: #262322 !important;
-    font-size: 1.5rem !important;
+    background-color: #9590A8;
+    color: #262322;
+    font-size: 2.5rem;
+    height: 900px;
+}
+.about h2{
+    display: flex;
+    justify-content: center;
+}
+.about p{
+    padding: 0 1em 0 1em;
+}
+.about-image{
+    float: left;
 }
 
 .contact{
-    background-color: #C2A878 !important;
-    font-family: Arial, Helvetica, sans-serif !important;
+    background-color: #FCDEBE;
+    font-family: Arial, Helvetica, sans-serif;
     color: #262322;
-    font-size: 1.5rem !important;
+    font-size: 2.5rem;
+}
+.contact h2{
+    display: flex;
+    justify-content: center;
 }
 .contact p{
-    background-color: #FCDEBE;
-    padding: 1em;
+    padding: 0 1em 0 1em;
 }
 .contact-form{
-    background-color: #9590A8 !important;
+    background-color: #9590A8;
+    padding: 1em;
 }
 
 footer{
     text-align: center;
-    background-color: #262322 !important;
+    background-color: #262322;
     color: #ffffff;
+    font-size: 2.5rem;
 }

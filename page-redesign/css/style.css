@@ -215,5 +215,6 @@ footer{
     main{
         width: 70%;
         margin: auto;
+        /* I made the width 70% for desktop because I think it gives the page a good balance of space. */
     }
 }

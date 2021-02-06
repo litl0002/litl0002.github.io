@@ -70,56 +70,145 @@ h1, h2, h3, h4{
 .scooter img{
     width: 285px;
 }
+/* all inputs have the same padding throughout the page */
+input{
+    padding: 10px;
+}
+
+/* Body size */
+body{
+    background-color: #f7f7ff;
+}
+
+/* Main */
+main{
+    padding: 25px 40px 40px 40px;
+    width: 300px;
+    margin: auto;
+}
 
 /* Title / first paragraph */
 h1{
     font-size: 50px;
     /* size based of png */
+    color: #333131;
 }
 .boss p{
     font-size: 15px;
     /* size based of png */
+    color: #333131;
 }
 
 
 /* Apply Now */
+.apply{
+    background-color: #ffffff;
+    padding: 25px 30px 25px 30px;
+    border-radius: 30px;
+    box-shadow: 3px 3px 15px -3px #333131;
+    margin-top: 15px;
+}
 .apply h2{
     font-size: 25px;
+    color: #333131;
 }
 .apply p{
     font-size: 10px;
+    color: #333131;
 }
 .apply .textbox input{
     border: none;
     background-color: #f4f4f5;
     /* adding grid elements */
     display: flex;
+    margin-bottom: 10px;
+    width: 220px;
+    border-radius: 10px;
+    color: #9b9b9b;
 }
 .apply button{
     font-size: 15px;
     background-color: #57eeab;
     border: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    border-radius: 10px;
+    color: #333131;
+}
+.agree p{
+    color: #333131;
+    padding-top: 5px;
+    /* I added padding here to make the p align with the checkbox */
 }
 .agree input{
     float: left;
 }
+.applied p{
+    float: left;
+    color: #333131;
+}
+.applied a{
+    font-size: 10px;
+    text-decoration: none;
+    color: #ffb1ae;
+    padding-left: 5px;
+}
 
 /* Footer */
-.earn{
+footer{
     background-color: #fffd8c;
+}
+.earn{
+    width: 300px;
+    margin: auto;
+    padding: 25px 0px 25px 0px;
 }
 .earn h2{
     font-size: 10px;
+    color: #333131;
 }
 .earn p{
     font-size: 10px;
+    color: #333131;
 }
 .earn .textbox input{
     border: none;
+    color: #707070;
+}
+.earn .textbox{
+    display: flex;
+    flex-wrap: wrap;
+}
+.earn #hours{
+    width: 65px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+.earn #city{
+    width: 185px;
+    border-radius: 10px;
 }
 .earn button{
     background-color: #ff8480;
-    color: white;
+    color: #f7f7ff;
     border: none;
     font-size: 15px;
+    width: 100%;
+    margin: 10px 0px 30px 0px;
+    padding: 10px 0px 10px 0px;
+    border-radius: 10px;
+}
+.icons{
+    display: flex;
+    justify-content: space-around;
+}
+
+.facebook{
+    border-radius: 100%;
+}
+
+.twitter{
+    background-color: #333131;
+
 }

@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
-    <title></title>
+    <title>Dash</title>
 </head>
 <body>
     <main>
-        <section class="logo">
+        <div class="logo">
             <img src="images/logo/logo.png" alt="logo">
-        </section>
-        <section>
+        </div>
+        <section class="boss">
             <h1>
                 Want to be your own boss?
             </h1>
@@ -19,41 +19,59 @@
                 Start today and make up tp $30/hr driving your own vehicle with Dash!
             </p>
         </section>
-        <section class="scooter">
-            <img src="images/bg-image/scooter.svg" alt="scooter">
-        </section>
-        <section>
+            <div class="scooter">
+                <img src="images/bg-image/scooter.svg" alt="scooter">
+            </div>
+        <section class="apply">
             <h2>
                 Apply Now
             </h2>
             <p>
                 Enter your info below.
             </p>
-                    <input type="first" id="first" name="first" placeholder="First name">
-                    <input type="last" id="last" name="last" placeholder="Last name"> 
-                    <input type="number" id="number" name="number" placeholder="Phone number"> 
-                    <input type="email" id="email" name="email" placeholder="Email Address"> 
+            <div class="textbox">
+                <input type="text" id="first" placeholder="First name">
+                <input type="text" id="last" placeholder="Last name"> 
+                <input type="text" id="number" placeholder="Phone number"> 
+                <input type="email" id="email" placeholder="Email Address">  
+            </div>
+            <div class="agree">
+                <input type="checkbox" id="box" style="border:2px solid grey">
+                <p>
+                    I agree to dash terms
+                </p>
+            </div>
             <button>
                 DRIVE WITH US
             </button>
+            <p>
+                Already applied? 
+            </p>
+            <a href="#">Check your application status here</a>
         </section>
     </main>
-    <footer>
-        <section>
+    <footer class="earn">
+        <div>
             <h2>
-            See how much you can earn with Dash.
-        </h2>
+                See how much you can earn with Dash.
+            </h2>
         <p>
             how many hours do you want to drive with us this week?
         </p>
-        <button>CALCULATE</button>
-        </section>
-       <section>
-           <img src="images/icons/facebook.svg" alt="facebook">
-        <img src="images/icons/instagram.svg" alt="instagram">
-        <img src="images/icons/linkedin.svg" alt="linkedin">
-        <img src="images/icons/twitter.svg" alt="twitter">
-       </section>
+        </div>
+        <div class="textbox">
+             <input type="text" id="hours" placeholder="Hours">
+             <input type="text" id="City" placeholder="City"> 
+        </div>
+        <div>
+            <button>CALCULATE</button>
+        </div>
+        <div>
+             <img src="images/icons/facebook.svg" alt="facebook">
+             <img src="images/icons/instagram.svg" alt="instagram">
+             <img src="images/icons/twitter.svg" alt="twitter">
+             <img src="images/icons/linkedin.svg" alt="linkedin">
+        </div>
     </footer>
 </body>
 </html>

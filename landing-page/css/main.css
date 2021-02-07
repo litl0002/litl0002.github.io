@@ -69,6 +69,8 @@ h1, h2, h3, h4{
 }
 .scooter img{
     width: 285px;
+    display: block;
+    margin: auto;
 }
 /* all inputs have the same padding throughout the page */
 input{
@@ -211,4 +213,102 @@ footer{
 .twitter{
     background-color: #333131;
 
+}
+
+/* -----------------------------------------------
+                    Tablet
+-------------------------------------------------- */
+
+@media screen and (min-width: 768px){
+   
+    /* Main */
+    main{
+        width: 605px;
+    }
+
+    .boss{
+        position: absolute;
+        /* I used position absolute so the image of the scooter can be behind the text */
+    }
+
+    /* Scooter */
+    .scooter img{
+        width: 420px;
+        margin-top: 75px;
+    }
+
+    /* Apply Now */
+    .info::after{
+        content: 'Enter your info below to get started.';
+    }
+    .apply p{
+        font-size: 20px;
+    }
+    .agree p{
+        font-size: 15px;
+    }
+    .applied p{
+        font-size: 10px;
+    }
+    .apply .textbox input{
+        width: 525px;
+    }
+    .apply .textbox input:nth-child(3){
+        order: 1;
+    }
+
+    /* Footer */
+    .earn{
+        width: 605px;
+    }
+    .earn button{
+        width: 200px;
+        margin-left: 10px;
+    }
+    .earn #hours{
+        width: 100px;
+        height: 30px;
+    }
+    .earn #city{
+        width: 245px;
+        height: 30px;
+    }
+    .icons{
+        width: 300px;
+        margin: auto;
+    }
+}
+
+
+
+
+
+
+/* -----------------------------------------------
+                    Desktop
+-------------------------------------------------- */
+
+@media screen and (min-width: 1650px){
+    main{
+        display: grid;
+		grid-template-columns: 3fr;
+		grid-template-rows: 2fr;
+		grid-template-areas: 
+        "header header header"
+        "one two three"
+		;
+    }
+
+    main .logo{
+        grid-area: header;
+    }
+    main .boss{
+		grid-area: one;
+    }
+    main .picture{
+		grid-area: two;
+    }
+    main .apply{
+		grid-area: three;
+	}
 }

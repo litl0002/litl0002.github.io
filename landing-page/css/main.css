@@ -72,6 +72,7 @@ h1, h2, h3, h4{
     display: block;
     margin: auto;
 }
+
 /* all inputs have the same padding throughout the page */
 input{
     padding: 10px;
@@ -212,6 +213,7 @@ footer{
 
 .twitter{
     background-color: #333131;
+    color: transparent;
 
 }
 
@@ -224,6 +226,9 @@ footer{
     /* Main */
     main{
         width: 605px;
+    }
+    .container{
+        margin-top: 100px;
     }
 
     .boss{
@@ -238,9 +243,6 @@ footer{
     }
 
     /* Apply Now */
-    .info::after{
-        content: 'Enter your info below to get started.';
-    }
     .apply p{
         font-size: 20px;
     }
@@ -253,9 +255,7 @@ footer{
     .apply .textbox input{
         width: 525px;
     }
-    .apply .textbox input:nth-child(3){
-        order: 1;
-    }
+
 
     /* Footer */
     .earn{
@@ -281,34 +281,47 @@ footer{
 
 
 
-
-
-
 /* -----------------------------------------------
                     Desktop
 -------------------------------------------------- */
 
-@media screen and (min-width: 1650px){
-    main{
-        display: grid;
-		grid-template-columns: 3fr;
-		grid-template-rows: 2fr;
-		grid-template-areas: 
-        "header header header"
-        "one two three"
-		;
+@media screen and (min-width: 1024px){
+    
+
+    
+    .picture{
+        position: static;
     }
 
-    main .logo{
-        grid-area: header;
+
+
+    .info::after{
+        content: 'Enter your info below to get started.';
     }
-    main .boss{
-		grid-area: one;
+
+    /* footer */
+    .earn{
+        width: 1024px;
     }
-    main .picture{
-		grid-area: two;
+    .icons{
+        margin: 0;
+        height: 30px;
+
     }
-    main .apply{
-		grid-area: three;
-	}
+    .icons img:nth-child(2){
+        order: -2;
+    }
+    .icons img:nth-child(3){
+        order: -1;
+    }
+    .facebook{
+        border-radius: 0;
+    }
+    .twitter{
+        background-color: transparent;
+    }
+    .desktop{
+        display: flex;
+        flex-wrap: wrap;
+    }
 }

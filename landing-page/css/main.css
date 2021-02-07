@@ -52,10 +52,12 @@ table {
 -------------------------------------------------- */
 p{
     margin: 1em 0;
+    font-family: 'Montserrat', sans-serif;
 }
 
 h1, h2, h3, h4{
-	font-weight: bold;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* -----------------------------------------------
@@ -92,12 +94,14 @@ main{
 
 /* Title / first paragraph */
 h1{
-    font-size: 50px;
+    font-size: 55px;
     /* size based of png */
     color: #333131;
+    line-height: 70px;
 }
 .boss p{
-    font-size: 15px;
+    font-size: 20px;
+    line-height: 30px;
     /* size based of png */
     color: #333131;
 }
@@ -130,14 +134,15 @@ h1{
     color: #9b9b9b;
 }
 .apply button{
-    font-size: 15px;
     background-color: #57eeab;
     border: none;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     width: 100%;
     border-radius: 10px;
     color: #333131;
+    font-weight: bold;
+    font-size: 25px;
 }
 .agree p{
     color: #333131;
@@ -196,11 +201,12 @@ footer{
     background-color: #ff8480;
     color: #f7f7ff;
     border: none;
-    font-size: 15px;
+    font-size: 20px;
     width: 100%;
     margin: 10px 0px 30px 0px;
     padding: 10px 0px 10px 0px;
     border-radius: 10px;
+    font-weight: bold;
 }
 .icons{
     display: flex;
@@ -211,11 +217,6 @@ footer{
     border-radius: 100%;
 }
 
-.twitter{
-    background-color: #333131;
-    color: transparent;
-
-}
 
 /* -----------------------------------------------
                     Tablet
@@ -227,27 +228,33 @@ footer{
     main{
         width: 605px;
     }
-    .container{
-        margin-top: 100px;
-    }
 
     .boss{
         position: absolute;
         /* I used position absolute so the image of the scooter can be behind the text */
+        width: 605px;
+    }
+    h1{
+        font-size: 80px;
+        line-height: 90px;
     }
 
     /* Scooter */
     .scooter img{
         width: 420px;
-        margin-top: 75px;
+        margin-top: 325px;
     }
 
     /* Apply Now */
+    
     .apply p{
         font-size: 20px;
     }
     .agree p{
         font-size: 15px;
+        padding: 0;
+        /* I used this to remove the previous padding becasue the size of the font changed */
+        padding-top: 1px;
     }
     .applied p{
         font-size: 10px;
@@ -287,12 +294,26 @@ footer{
 
 @media screen and (min-width: 1024px){
     
-
-    
-    .picture{
+    .boss{
         position: static;
     }
 
+
+
+    .container{
+        display: flex;
+        align-content: center;
+    }
+    .boss{
+        width: 500px;
+    }
+    .picture{
+        width: 550px;
+    }
+    .apply{
+        width: 550px;
+    }
+    
 
 
     .info::after{
@@ -303,6 +324,20 @@ footer{
     .earn{
         width: 1024px;
     }
+
+    .earn{
+        display: flex;
+    }
+
+    #one{
+        float: left;
+      }
+      
+    #two{
+        float: right;
+        margin-top: 25px;
+      }
+
     .icons{
         margin: 0;
         height: 30px;
@@ -320,8 +355,5 @@ footer{
     .twitter{
         background-color: transparent;
     }
-    .desktop{
-        display: flex;
-        flex-wrap: wrap;
-    }
+    
 }

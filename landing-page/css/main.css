@@ -97,6 +97,7 @@ h1{
     font-size: 55px;
     /* size based of png */
     color: #333131;
+    /* all colours used/changed are from the images in Photoshop */
     line-height: 70px;
 }
 .boss p{
@@ -126,6 +127,7 @@ h1{
 
 .started{
     visibility: hidden;
+    /* I used visibilty so only 'Enter your info below.' is shown */
 }
 .apply .textbox input{
     border: none;
@@ -194,6 +196,7 @@ footer{
 .earn .textbox{
     display: flex;
     flex-wrap: wrap;
+    /* flex wrap was used to get the inputs and together horizontally */
 }
 .earn #hours{
     width: 65px;
@@ -308,7 +311,7 @@ footer{
     .container{
         display: flex;
         justify-content: center;
-        width: 1024px;
+        width: 1000px;
     }
     .logo img{
         margin-bottom: 100px;
@@ -318,6 +321,7 @@ footer{
     /* Boss */
     .boss{
         position: static;
+        /* boss postition changed to do flex */
     }
     .boss h1{
         font-size: 50px;
@@ -339,6 +343,7 @@ footer{
     }
     .info{
         display: none;
+        /* display is none so only 'Enter your info below to get started.' is shown */
     }
     .started{
         visibility: visible;
@@ -371,9 +376,6 @@ footer{
     }
     .facebook{
         border-radius: 0;
-    }
-    .twitter{
-        background-color: transparent;
     }
     
 }

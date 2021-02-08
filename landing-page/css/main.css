@@ -110,7 +110,7 @@ h1{
 /* Apply Now */
 .apply{
     background-color: #ffffff;
-    padding: 25px 30px 25px 30px;
+    padding: 25px;
     border-radius: 30px;
     box-shadow: 3px 3px 15px -3px #333131;
     margin-top: 15px;
@@ -122,6 +122,10 @@ h1{
 .apply p{
     font-size: 10px;
     color: #333131;
+}
+
+.started{
+    visibility: hidden;
 }
 .apply .textbox input{
     border: none;
@@ -152,15 +156,18 @@ h1{
 .agree input{
     float: left;
 }
+.applied{
+    margin-bottom: 40px;
+}
 .applied p{
     float: left;
     color: #333131;
+    font-size: 12px;
+    line-height: 18px;
 }
-.applied a{
-    font-size: 10px;
+.applied .red{
     text-decoration: none;
     color: #ffb1ae;
-    padding-left: 5px;
 }
 
 /* Footer */
@@ -242,7 +249,7 @@ footer{
     /* Scooter */
     .scooter img{
         width: 420px;
-        margin-top: 325px;
+        padding-top: 325px;
     }
 
     /* Apply Now */
@@ -257,7 +264,8 @@ footer{
         padding-top: 1px;
     }
     .applied p{
-        font-size: 10px;
+        font-size: 15px;
+        text-align: center;
     }
     .apply .textbox input{
         width: 525px;
@@ -292,56 +300,68 @@ footer{
                     Desktop
 -------------------------------------------------- */
 
-@media screen and (min-width: 1024px){
-    
+@media screen and (min-width: 1600px){
+    /* Main */
+    main{
+        width: 1000px;
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+        width: 1024px;
+    }
+    .logo img{
+        margin-bottom: 100px;
+        
+    }
+
+    /* Boss */
     .boss{
         position: static;
     }
-
-
-
-    .container{
-        display: flex;
-        align-content: center;
-    }
-    .boss{
-        width: 500px;
-    }
-    .picture{
-        width: 550px;
-    }
-    .apply{
-        width: 550px;
+    .boss h1{
+        font-size: 50px;
+        line-height: 60px;
+        width: 400px;
     }
     
+    /* Scooter */
+    .scooter img{
+        padding-top: 0px;
+        width: 500px;
+        height: 500px;
+    }
 
 
-    .info::after{
-        content: 'Enter your info below to get started.';
+    /* Apply */
+    .apply{
+        height: 400px;
+    }
+    .info{
+        display: none;
+    }
+    .started{
+        visibility: visible;
     }
 
     /* footer */
     .earn{
-        width: 1024px;
+        width: 1500px;
     }
-
     .earn{
         display: flex;
     }
-
     #one{
         float: left;
-      }
-      
+    } 
     #two{
         float: right;
         margin-top: 25px;
-      }
-
+        margin-left: 595px;
+    }
     .icons{
         margin: 0;
         height: 30px;
-
     }
     .icons img:nth-child(2){
         order: -2;

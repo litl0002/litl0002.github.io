@@ -102,7 +102,7 @@ nav a{
     color: #0FA3B1;
 }
 
-/* ----- Home Page ----- */
+/* ----- Header & Footer ----- */
 
 /* Home */
 .home-page h2, .about-page h2, .passion-page h2{
@@ -115,7 +115,7 @@ nav a{
     background-color: #0FA3B1;
     color: #483D3F;
 }
-.home-page p, .about-page p{
+.home-page p, .about-page, .passion-page p{
     background-color: #F3F3F4;
     width: 450px;
     padding: .25em;
@@ -182,8 +182,11 @@ button{
     border: none;
 }
 
-/* ----- About Page ----- */
+/* ----- About Page & Passion Page----- */
+.about-page, .passion-page h3{
+    text-align: center;
+}
+.hometown, .curling{
+    background-color: #0FA3B1;
+}
 
-
-
-/* ----- Passion Page ----- */

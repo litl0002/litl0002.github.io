@@ -117,8 +117,9 @@ nav a{
 }
 .home-page p, .about-page p, .passion-page p{
     background-color: #F3F3F4;
+    color: #483D3F;
     width: 450px;
-    padding: .25em;
+    padding: .5em;
     text-align: center;
     margin: auto;
     /* I used a border to add more space around the textbox istead of margin because I already used margin: auto; */
@@ -186,8 +187,12 @@ button{
 }
 
 /* ----- About Page & Passion Page----- */
-.about-page, .passion-page h3{
+.about-page h3, .passion-page h3{
     text-align: center;
+    padding-top: .5em;
+}
+.curling h3, .hometown h3{
+    color: #483D3F;
 }
 .hometown, .curling{
     background-color: #0FA3B1;

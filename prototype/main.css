@@ -144,7 +144,7 @@ footer p{
     color: #F3F3F4;
     margin-top: 1em;
 }
-.work iframe{
+iframe{
     width: 100%;
     height: 300px;
 }
@@ -196,4 +196,47 @@ button{
 }
 .hometown, .curling{
     background-color: #0FA3B1;
+}
+
+/* -----------------------------------------------
+                Tablet Style
+-------------------------------------------------- */
+
+@media screen and (min-width: 700px){
+    /* navigation */
+    nav ul{
+        display: flex;
+        justify-content: space-evenly; 
+    }
+    nav li{
+        padding: 1em;
+    }
+
+    /* My Work */
+    iframe{
+        height: 400px;
+        /* I made the height only 400px to make the video appear to be a more cinematic in size */
+    }
+    /* Connect */
+    .connect h3{
+        margin-bottom: 1em;
+    }
+    .form{
+        width: 600px;
+        margin: auto;
+    }
+
+    /* Footer */
+    footer{
+        margin-top: 2em;
+        /* I added a margin to the top to create space after the space was lost using the margin auto on the form */
+    }
+}
+
+/* -----------------------------------------------
+                    Desktop
+-------------------------------------------------- */
+
+@media screen and (min-width: 1400px){
+
 }

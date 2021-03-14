@@ -216,7 +216,7 @@ button{
                 Tablet Style
 -------------------------------------------------- */
 
-@media screen and (min-width: 700px){
+@media screen and (min-width: 750px){
     /* navigation */
     nav ul{
         display: flex;
@@ -238,7 +238,8 @@ button{
     }
 }
 
-@media screen and (min-width: 700px) and (max-width: 1200px){
+/* I have 2 @media to remove the chages on the desktop version but to also keep some features. */
+@media screen and (min-width: 750px) and (max-width: 1200px){
      /* My Work */
     iframe{
         height: 400px;
@@ -259,7 +260,10 @@ button{
         padding: 1em;
     }
     .tablet img{
-        width: 30%;
+        width: 100%;
+        height: 100%;
+        max-width: 300px;
+        margin: auto;
     }
     .tablet h3{
         margin: auto;

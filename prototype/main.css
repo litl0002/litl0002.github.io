@@ -112,11 +112,15 @@ nav a{
     text-decoration: none;
     color: #0FA3B1;
 }
+nav a:hover{
+    color: #A98743;
+    transition: .5s;
+}
 
 /* ----- Header & Footer ----- */
 
 /* Home */
-.home-page h2, .about-page h2, .passion-page h2{
+main h2{
     padding: .5em;
     text-align: center;
     background-color: #0FA3B1;
@@ -126,7 +130,7 @@ nav a{
     background-color: #0FA3B1;
     color: #483D3F;
 }
-.home-page p, .about-page p, .passion-page p{
+main p{
     background-color: #F3F3F4;
     color: #483D3F;
     width: 450px;
@@ -199,9 +203,14 @@ button{
     border-radius: 15px;
     border: none;
 }
+button:active{
+    width: 150px;
+    height: 40px;
+    transition: width 1s;
+}
 
 /* ----- About Page & Passion Page----- */
-.about-page h3, .passion-page h3{
+main h3{
     text-align: center;
     padding-top: .5em;
 }
@@ -227,8 +236,8 @@ button{
     }
 
     /* Home Page */
-    .home-page p{
-        width: 650px;
+    .home p{
+        width: 600px;
     }
 
     /* Footer */
@@ -301,12 +310,16 @@ button{
     .work, .connect, .passion, .curling, .about, .hometown{
         margin: 2em;
     }
-    .home-page p{
+    .home p{
         width: 900px;
     }
 
+    iframe{
+        margin-top: 5em;
+    }
+
     /* About Page */
-    .home-page h2, .about-page h2, .passion-page h2{
+    main h2{
         width: 30%;
         margin: auto;
         border-radius: 40px;

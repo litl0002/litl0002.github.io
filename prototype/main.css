@@ -236,6 +236,7 @@ button{
         width: 600px;
         margin: auto;
     }
+    
 
     /* Footer */
     footer{
@@ -249,5 +250,51 @@ button{
 -------------------------------------------------- */
 
 @media screen and (min-width: 1200px){
+    /* Entire Page */
+    nav{
+        width: 100%;
+        position: absolute;
+        top: 0;
+    }
+    .title{
+        margin-top: 6em;
+        margin-bottom: 3em;
+    }
+   
+    /* Navigation */
+    nav ul{
+        justify-content: flex-end;
+    }
     
+    /* About Page */
+    .home-page h2, .about-page h2, .passion-page h2{
+        width: 30%;
+        margin: auto;
+        border-radius: 40px;
+    }
+    .about-page div{
+        display: flex;
+        margin-bottom: 3em;
+        padding: 2em;
+    }
+    .about, .passion, .home{
+        margin-top: 3em;
+    }
+    .about-page img, .passion-page img{
+        width: 40%;
+    }
+    .about-page h3, .passion-page h3{
+        margin: auto;
+        
+    }
+    .about-page p, .passion-page p{
+        padding: none;
+    }
+
+    /* Passion page */
+    .passion-page div{
+        display: flex;
+        margin-bottom: 3em;
+        padding: 2em;
+    }
 }

@@ -136,6 +136,9 @@ nav a{
     /* I used a border to add more space around the textbox istead of margin because I already used margin: auto; */
     border: 15px solid #0FA3B1;
 }
+iframe{
+    margin-top: 2em;
+}
 
 /* Footer */
 footer{
@@ -223,7 +226,20 @@ button{
         padding: 1em;
     }
 
-    /* My Work */
+    /* Home Page */
+    .home-page p{
+        width: 650px;
+    }
+
+    /* Footer */
+    footer{
+        margin-top: 2em;
+        /* I added a margin to the top to create space after the space was lost using the margin auto on the form */
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1200px){
+     /* My Work */
     iframe{
         height: 400px;
         /* I made the height only 400px to make the video appear to be a more cinematic in size */
@@ -237,11 +253,17 @@ button{
         margin: auto;
     }
     
-
-    /* Footer */
-    footer{
-        margin-top: 2em;
-        /* I added a margin to the top to create space after the space was lost using the margin auto on the form */
+    /* About & Passion */
+    .passion, .curling, .about, .hometown{
+        display: flex;
+        padding: 1em;
+    }
+    .tablet img{
+        width: 30%;
+    }
+    .tablet h3{
+        margin: auto;
+        padding: .5em;
     }
 }
 
@@ -265,36 +287,35 @@ button{
     nav ul{
         justify-content: flex-end;
     }
-    
+
+    /* Home Page */
+    .desktop{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 2em;
+    }
+    .work, .connect, .passion, .curling, .about, .hometown{
+        margin: 2em;
+    }
+    .home-page p{
+        width: 900px;
+    }
+
     /* About Page */
     .home-page h2, .about-page h2, .passion-page h2{
         width: 30%;
         margin: auto;
         border-radius: 40px;
     }
-    .about-page div{
-        display: flex;
-        margin-bottom: 3em;
-        padding: 2em;
-    }
     .about, .passion, .home{
         margin-top: 3em;
     }
-    .about-page img, .passion-page img{
-        width: 40%;
-    }
-    .about-page h3, .passion-page h3{
+    .about-page h3{
         margin: auto;
-        
-    }
-    .about-page p, .passion-page p{
-        padding: none;
     }
 
-    /* Passion page */
-    .passion-page div{
-        display: flex;
-        margin-bottom: 3em;
-        padding: 2em;
+    /* Passion Page */
+    .hometown, .curling{
+        margin-top: 3em;
     }
 }

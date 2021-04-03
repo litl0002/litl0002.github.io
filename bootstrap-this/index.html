@@ -9,12 +9,12 @@
 </head>
 <body class="bg-light">
     <header>
-        <h1 class="display-1 text-center bg-dark text-light p-4">
+        <h1 class="display-1 text-center bg-dark text-light pb-3">
             Bootstrap
         </h1>
     </header>
-   <main class="container">
-        <div>
+   <main class="container px-5">
+        <div class="pt-3">
             <h3 class="display-3 text-info">
                 Introduction
             </h3>
@@ -72,6 +72,36 @@
                 <h4 class="display-4 text-secondary">
                     How it works!
                 </h4>
+                <p>The user has the choice between margin and padding using Bootstrap. The user will use the format {property}{sides}-{size}.</p>
+                <p>
+                    The property is 'm' for margin and 'p' for padding.
+                </p>
+                <div class="row">
+                    <div class="col-lg">
+                        <p>The sides will be:</p>
+                        <ul>
+                            <li>t - sets margin-top or padding-top</li>
+                            <li>b - sets margin-bottom or padding-bottom</li>
+                            <li>l - sets margin-left or padding-left</li>
+                            <li>r - sets margin-right or padding-right</li>
+                            <li>x - sets both left and right</li>
+                            <li>y - both top and bottom</li>
+                            <li>blank - sets margin or padding on all 4 sides</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg">
+                        <p>The size will be:</p>
+                        <ul>
+                            <li>0 - eliminates the margin or padding by setting it to 0</li>
+                            <li>1 - sets the margin or padding to $spacer * 0.25</li>
+                            <li>2 - sets the margin or padding to $spacer * 0.5</li>
+                            <li>3 - sets the margin or padding to $spacer * 1</li>
+                            <li>4 - sets the margin or padding to $spacer * 1.5</li>
+                            <li>5 - sets the margin or padding to $spacer * 3</li>
+                            <li>auto - sets the margin to auto</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
    </main>

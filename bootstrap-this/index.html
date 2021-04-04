@@ -12,24 +12,20 @@
         <h1 class="display-1 text-center bg-dark text-light pb-3">
             Bootstrap
         </h1>
-        <nav class="navbar">
+        <nav class="nav-tabs pb-3 row justify-content-center">
             <a href="#colours" class="text-dark nav-link">Colours</a>
             <a href="#spacing" class="text-dark nav-link">Spacing</a>
             <a href="#typography" class="text-dark nav-link">Typography</a>
             <a href="#grid" class="text-dark nav-link">Grid</a>
+            <a href="#button" class="text-dark nav-link">Buttons</a>
         </nav>
     </header>
    <main class="container px-5">
-       <div>
+       <div class="p-4">
             <h2 class="text-center text-success display-2">
             About Bootstrap
             </h2>
-        </div>
-        <div class="pt-3">
-            <h3 class="display-3 text-info">
-                Introduction
-            </h3>
-            <p>
+            <p class="text-center">
                 Bootsrap is very powerful. Many web designers and web developpers use it. It is easy to work with becasue of its felxibilty and responsivabilty. The user will add a class attribute in the HTML to make the desiered changes to their site.
             </p>
         </div>
@@ -156,14 +152,52 @@
                     Grid
                 </h3>
             </div>
-            <div>
-                <h4 class="display-4 text-secondary">
-                    How it works!
-                </h4>
-                <p>
-                    
-                </p>
+            <div class="row">
+                <div class="col-lg">
+                    <h4 class="display-4 text-secondary">
+                        How it works!
+                    </h4>
+                    <p>
+                        Grid will consist of containers, rows, and columns to layout and align content. Grid options will consist of different breakpoints. The breakpoints are:
+                    </p>
+                    <ul>
+                        <li>Extra small - greater then 576px - 'col- '</li>
+                        <li>Small - less or eaqual to 576px - 'col-sm- '</li>
+                        <li>Medium - less or equal to 768px - 'col-lg-'</li>
+                        <li>Extra large - less or equal to - 'col-xl- '</li>
+                    </ul>
+                </div>
+                <div class="col-lg">
+                    <h4 class="display-4 text-secondary">
+                        Combining Columns
+                    </h4>
+                    <p>
+                        The user can divide the row by 12 units at the end of the 'col' attribute. Some examples are:
+                    </p>
+                    <p>
+                        ex      ...class="col-md-6" 
+                            ...class="col-md-6" 
+                    </p>
+                    <p>
+                        or      ...class="col-sm-8" 
+                            ...class="col-sm-4" 
+                    </p>
+                    <p>
+                        even    ...class="col-lg-2" 
+                            ...class="col-lg-10" 
+                    </p>
+                </div>
             </div>
+        </div>
+        <div class=" pb-5" id="button">
+            <h3 class="display-3 text-info">
+                Buttons
+            </h3>
+        </div>
+        <div>
+            <h4>
+
+            </h4>
         </div>
    </main>
    <footer class="text-center bg-dark text-light p-4">

@@ -76,11 +76,15 @@
                 <h4 class="display-4 text-secondary">
                     How it works!
                 </h4>
-                <p>
-                    The user has the choice between margin and padding using Bootstrap. The user will use the format {property}{sides}-{size}.</p>
-                <p>
-                    The property is 'm' for margin and 'p' for padding.
+                <div class="row">
+                <p class="col-lg">
+                    The user has the choice between margin and padding using Bootstrap. The user will use the format {property}{sides}-{size}. 
                 </p>
+                <p class="col-lg">
+                    The property is 'm' for margin and 'p' for padding.
+                </p> 
+                </div>
+                
                 <div class="row">
                     <div class="col-lg">
                         <p>
@@ -183,24 +187,56 @@
                             ...class="col-sm-4" 
                     </p>
                     <p>
-                        even    ...class="col-lg-2" 
-                            ...class="col-lg-10" 
+                        even    ...class="col-lg-4" 
+                            ...class="col-lg-4" 
+                            ...class="col-lg-4" 
                     </p>
                 </div>
             </div>
         </div>
-        <div class=" pb-5" id="button">
-            <h3 class="display-3 text-info">
-                Buttons
-            </h3>
-        </div>
         <div>
-            <h4>
-
-            </h4>
+            <div id="button">
+                <h3 class="display-3 text-info">
+                    Buttons
+                </h3>
+            </div>
+            <div>
+                <h4 class="display-4 text-secondary">
+                    Colours
+                </h4>
+                <p>
+                    Like adding colours to text, the user will add 'btn-...' to the class attribute. The user could add 'btn-primary' for example to have a blue button. To add a coloured outline the user would add 'btn-outline-primary' to add a blue outline.
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-sm text-center">
+                    <p>
+                        Button using ...class="btn-primary"
+                    </p>
+                    <button class="btn-primary btn mb-3" type="button">
+                        Button
+                    </button>
+                </div>
+                <div class="col-sm text-center">
+                    <p>
+                        Button using ...class="btn-outline-primary"
+                    </p>
+                    <button class="btn-outline-primary btn" type="button">
+                        Button
+                    </button>
+                </div>
+            </div>
+            <div>
+                <h4 class="display-4 text-secondary">
+                    Size
+                </h4>
+                <p>
+                    The user has the choice to change the button size. The user will add 'lg' to make the button larger or can add 'sm' to make the button smaller in the 'btn-' in the class attribute.
+                </p>
+            </div>
         </div>
    </main>
-   <footer class="text-center bg-dark text-light p-4">
+   <footer class="text-center bg-dark text-light p-4 mt-5">
         <p class="text-right"> 
             Copyright &copy; Adam Litle
         </p>

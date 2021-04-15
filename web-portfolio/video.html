@@ -9,22 +9,22 @@
     <title>Web Portfolio</title>
 </head>
 <body>
-    <header class="container">
+    <header  class="bg-info">
         <div>
-            <h1 class="display-1 text-center">
+            <h1 class="display-1 text-center text-light">
                 Web Portfolio
             </h1>
             <nav class="nav-tabs pb-3 row justify-content-center">
-                <a href="index.html" class="nav-link">Resume</a>
-                <a href="photo.html" class="nav-link">Photography</a>
-                <a href="video.html" class="nav-link">Videography</a>
-                <a href="illustration.html" class="nav-link">Illustrations</a>
+                <a href="index.html" class="nav-link bg-dark text-light m-1">Resume</a>
+                <a href="photo.html" class="nav-link bg-dark text-light m-1">Photography</a>
+                <a href="video.html" class="nav-link bg-dark text-light m-1">Videography</a>
+                <a href="illustration.html" class="nav-link bg-dark text-light m-1">Illustrations</a>
             </nav>
         </div>
     </header>
     <main>
         <div class="container">
-            <div>
+            <div class="spacing m-3">
                 <h2 class="display-3 text-center">
                     Videography
                 </h2>
@@ -32,28 +32,45 @@
                     All videos have been shot, directed, and edited by Adam Litle.
                 </p>
             </div>
-            <div>
+            <div class="row">
+                <div class="col-lg spacing">
+                    <h3 class="display-4 text-center">
+                        Montage
+                    </h3>
+                    <iframe 
+                        width="640" height="360" src="https://www.youtube.com/embed/YjVsXk_bwS4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    </iframe>
+                    <p class="text-center bg-info py-3 rounded">
+                        Here is an example of a monatge featuring clips from a raod trip.
+                    </p>
+                </div>
+                <div class="col-lg spacing">
+                    <h3 class="display-4 text-center">
+                        How to Video
+                    </h3>
+                    <iframe 
+                        width="640" height="360" src="https://www.youtube.com/embed/AVy10v4o6ps" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    </iframe>
+                    <p class="text-center bg-info py-3 rounded">
+                        Here is an example of a how to video.
+                    </p>
+                </div>
+            </div>
+             <div class="spacing">
                 <h3 class="display-4 text-center">
                     Interview
                 </h3>
-                <iframe width="640" height="360" src="https://www.youtube.com/embed/dmXGKybMfAY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <div>
-                <h3 class="display-4 text-center">
-                    Montage
-                </h3>
-                <iframe width="640" height="360" src="https://www.youtube.com/embed/YjVsXk_bwS4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <div>
-                <h3 class="display-4 text-center">
-                    How to Video
-                </h3>
-                <iframe width="640" height="360" src="https://www.youtube.com/embed/AVy10v4o6ps" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe 
+                    width="640" height="360" src="https://www.youtube.com/embed/dmXGKybMfAY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+                <p class="text-center bg-info py-3 rounded">
+                    Here is an example of a mock interview.
+                </p>
             </div>
         </div>
     </main>
     <footer>
-        <p class="text-right"> 
+        <p class="text-right p-3 bg-dark text-light mt-4"> 
             Copyright &copy; Adam Litle
         </p>
     </footer>

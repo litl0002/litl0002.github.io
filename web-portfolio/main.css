@@ -1,8 +1,13 @@
+/* --------------------
+    Custom Style
+---------------------*/
+
 img{
     height: 350px;
     width: auto;
     display: block;
     margin: auto;
+    padding-bottom: 1em;
 }
 
 iframe{
@@ -10,4 +15,30 @@ iframe{
     width: 450px;
     display: block;
     margin: auto;
+    padding: 1em;
+}
+
+h2{
+    color: #754C00;
+}
+
+h3{
+    color: coral;
+}
+
+.spacing{
+    margin-bottom: 2em;
+}
+
+
+
+@media screen and (min-width: 800px){
+    img{
+        height: 500px;
+    }
+    
+    iframe{
+        height: 500px;
+        width: 700px;
+    }
 }

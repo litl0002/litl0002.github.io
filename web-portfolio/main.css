@@ -30,15 +30,21 @@ h3{
     margin-bottom: 2em;
 }
 
-
+.resume{
+    width: 440px;
+    margin: auto;
+}
 
 @media screen and (min-width: 800px){
     img{
         height: 500px;
     }
-    
     iframe{
         height: 500px;
+        width: 700px;
+    }
+
+    .resume{
         width: 700px;
     }
 }

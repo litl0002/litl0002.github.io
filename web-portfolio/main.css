@@ -2,25 +2,11 @@
     Custom Style
 ---------------------*/
 
-img{
-    height: 350px;
-    width: auto;
-    display: block;
-    margin: auto;
-    padding-bottom: 1em;
-}
-
-iframe{
-    height: 300px;
-    width: 450px;
-    display: block;
-    margin: auto;
-    padding: 1em;
-}
+/* Typography */
 
 h1{
     font-family: 'Noto Sans', sans-serif;
-    padding: 40px;
+    padding: 30px;
 }
 
 h2{
@@ -37,6 +23,35 @@ p, a{
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+/* Add Ins */
+
+.adam{
+    position: relative;
+    animation: move 2s 
+    infinite;
+  animation-direction: alternate;
+}
+@keyframes move {
+  from {left: 10px;}
+  to {left: -10px;}
+}
+
+img{
+    height: 350px;
+    width: auto;
+    display: block;
+    margin: auto;
+    padding-bottom: 1em;
+}
+
+iframe{
+    height: 300px;
+    width: 450px;
+    display: block;
+    margin: auto;
+    padding: 1em;
+}
+
 .spacing{
     margin-bottom: 2em;
 }
@@ -46,10 +61,6 @@ p, a{
     margin: auto;
 }
 
-.insta:hover{
-    transition: 0.2s ease;
-    color: red;
-}
 
 @media screen and (min-width: 800px){
     img{

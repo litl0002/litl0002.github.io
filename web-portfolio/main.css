@@ -18,12 +18,23 @@ iframe{
     padding: 1em;
 }
 
+h1{
+    font-family: 'Noto Sans', sans-serif;
+    padding: 40px;
+}
+
 h2{
     color: #754C00;
+    font-family: 'Roboto', sans-serif;
 }
 
 h3{
     color: coral;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+p, a{
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .spacing{
@@ -31,8 +42,13 @@ h3{
 }
 
 .resume{
-    width: 440px;
+    width: 400px;
     margin: auto;
+}
+
+.insta:hover{
+    transition: 0.2s ease;
+    color: red;
 }
 
 @media screen and (min-width: 800px){

@@ -50,6 +50,7 @@ iframe{
     display: block;
     margin: auto;
     padding: 1em;
+    border: none;
 }
 
 .spacing{
@@ -60,6 +61,17 @@ iframe{
     width: 400px;
     margin: auto;
 }
+
+#photo{
+    width: 400px;
+    margin: auto;
+}
+
+#video{
+    width: 400px;
+    margin: auto;
+}
+
 
 
 @media screen and (min-width: 800px){
@@ -73,5 +85,16 @@ iframe{
 
     .resume{
         width: 700px;
+    }
+
+    #video{
+        width: 600px;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    iframe{
+        height: 900px;
+        width: 1100px;
     }
 }
